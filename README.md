@@ -1,3 +1,1 @@
-İnternet Programcılığı Uzun Açıklama
-
-Yeni değişiklik
+Internet Programcılığı II
