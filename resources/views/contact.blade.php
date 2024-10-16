@@ -26,7 +26,7 @@
         <br/><br/>
         Mesajınız:
         <br/>
-        <input name="mesaj" value="{{ old('mesaj') }}"></input>
+        <textarea name="mesaj">{{ old('mesaj') }}</textarea>
         <br/><br/>
         <input type="submit" value="Mesajı Gönder"/>
     </form>
