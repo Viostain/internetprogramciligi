@@ -15,18 +15,18 @@
         @csrf
         İsminiz:
         <br/>
-        <input type="text" name="isim"/>
+        <input type="text" name="isim" value="{{ old('isim') }}"/>
         <br/><br/>
         Konu:
         <select name="konu">
-            <option>Öğrenci İşleri</option>
-            <option>Sosyal Olanaklar</option>
-            <option>Diğer</option>
+            <option value="ogrenci-isleri" {{ old('konu') == 'ogrenci-isleri' ? 'selected' : '' }}>Öğrenci İşleri</option>
+            <option value="sosyal-olanaklar" {{ old('konu') == 'sosyal-olanaklar' ? 'selected' : '' }}>Sosyal Olanaklar</option>
+            <option value="diger" {{ old('konu') == 'diger' ? 'selected' : '' }}>Diğer</option>
         </select>
         <br/><br/>
         Mesajınız:
         <br/>
-        <textarea name="mesaj"></textarea>
+        <input name="mesaj" value="{{ old('mesaj') }}"></input>
         <br/><br/>
         <input type="submit" value="Mesajı Gönder"/>
     </form>
